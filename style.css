@@ -1,20 +1,22 @@
-/* ===== GALLERY FIX ===== */
-.media-grid, .video-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
-}
+/* ===== MUDASSAR WORLD - FINAL CSS ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0a0a; color: #fff; font-family: 'Poppins', sans-serif; }
 
+/* PROFILE PHOTO BADI */
+.profile-wrap {
+  width: 220px; height: 220px; margin: 30px auto;
+  border-radius: 50%; padding: 5px;
+  background: linear-gradient(135deg,#00b7ff,#2455ff);
+}
+.profile-wrap img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+
+/* GALLERY FIX - MOBILE 1, PC 2 */
+.media-grid {
+  display: grid; grid-template-columns: 1fr; gap: 20px; padding: 20px;
+}
 @media (min-width: 768px) {
-  .media-grid, .video-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .media-grid { grid-template-columns: repeat(2, 1fr); }
 }
-
 .media-grid img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 12px;
+  width: 100%; height: 350px; object-fit: cover; border-radius: 12px;
 }
