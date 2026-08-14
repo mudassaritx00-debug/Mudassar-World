@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudassar's World | Private Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="accessScreen" class="access-screen">
+    <div class="access-card">
+      <div class="brand-icon">🔐</div>
+      <p class="eyebrow">PRIVATE PORTFOLIO</p>
+      <h1>Welcome to Mudassar's World</h1>
+      <p class="tagline">“I don't follow the path — I create my own.”</p>
+
+      <div id="authArea">
+        <div id="authForm">
+          <input id="email" type="email" placeholder="Your email address" autocomplete="email">
+          <input id="password" type="password" placeholder="Password" autocomplete="current-password">
+          <input id="fullName" type="text" placeholder="Your name (for new account)">
+          <div class="btn-row">
+            <button id="signupBtn" class="btn primary">Create Account</button>
+            <button id="loginBtn" class="btn secondary">Login</button>
+          </div>
+          <p class="small">Create an account, then request access. Mudassar can Accept or Reject your request.</p>
+        </div>
+
+        <div id="requestArea" class="hidden">
+          <p id="loggedInText"></p>
+          <textarea id="reason" placeholder="Why would you like to view this portfolio?"></textarea>
+          <button id="requestBtn" class="btn primary full">Request Access</button>
+          <button id="logoutBtn" class="link-btn">Log out</button>
+        </div>
+
+        <div id="statusArea" class="hidden">
+          <div id="statusIcon" class="status-icon">⏳</div>
+          <h2 id="statusTitle">Access Pending</h2>
+          <p id="statusText">Your request is waiting for approval.</p>
+          <button id="refreshBtn" class="btn secondary">Check Again</button>
+          <button id="logoutBtn2" class="link-btn">Log out</button>
+        </div>
+      </div>
+
+      <p id="message" class="message"></p>
+    </div>
+  </div>
+
+  <main id="site" class="hidden">
+    <nav class="nav">
+      <div class="logo">M<span>U</span>DASSAR</div>
+      <div class="nav-links">
+        <a href="#home">🏠 Home</a>
+        <a href="#about">👤 About</a>
+        <a href="#education">🎓 Education</a>
+        <a href="#dit">💻 DIT Journey</a>
+        <a href="#skills">🛠️ Skills</a>
+        <a href="#projects">🚀 Projects</a>
+        <a href="#photos">📸 Photos</a>
+        <a href="#videos">🎬 Videos</a>
+        <a href="#contact">📞 Contact</a>
+      </div>
+      <button id="siteLogout" class="logout-small">Logout</button>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="profile-wrap">
+          <img src="images/profile.jpg" alt="Mudassar profile photo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="profile-placeholder">M</div>
+        </div>
+        <p class="eyebrow">WELCOME TO MY WORLD</p>
+        <h1>Mudassar's <span>Portfolio</span></h1>
+        <p class="hero-quote">“I don't follow the path — I create my own.”</p>
+        <p class="hero-sub">DIT Student • Web Developer • Video Editor • Creative Learner</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#about">Explore My Portfolio →</a>
+          <a class="btn secondary" href="#projects">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-title"><span>👤</span><div><p>WHO I AM</p><h2>About Me</h2></div></div>
+      <div class="about-grid">
+        <div class="glass card">
+          <h3>Hi, I'm Mudassar 👋</h3>
+          <p>I am a student and technology learner interested in web development, office productivity, graphic design and video editing. I enjoy building practical projects and improving my computer skills.</p>
+          <p>My current learning journey includes DIT at Government Skill Development Center, Hassa Balakot, while continuing my college studies.</p>
+        </div>
+        <div class="stats">
+          <div class="glass stat"><strong>20</strong><span>Photos</span></div>
+          <div class="glass stat"><strong>20</strong><span>Videos</span></div>
+          <div class="glass stat"><strong>6/12</strong><span>DIT Months</span></div>
+          <div class="glass stat"><strong>1st</strong><span>Year Complete</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="section-title"><span>🎓</span><div><p>MY ACADEMIC PATH</p><h2>Education</h2></div></div>
+      <div class="timeline">
+        <article class="timeline-item glass"><div class="dot">🏫</div><div><span>Completed</span><h3>Matriculation</h3><p>Government High School Jabri Kalish, Mansehra</p></div></article>
+        <article class="timeline-item glass"><div class="dot">🎓</div><div><span>Completed</span><h3>Intermediate — 1st Year</h3><p>Government Degree College Balakot</p></div></article>
+        <article class="timeline-item glass"><div class="dot">💻</div><div><span>In Progress</span><h3>Diploma in Information Technology (DIT)</h3><p>Government Skill Development Center (GSDC), Hassa Balakot</p><p><b>Course:</b> 1 year &nbsp; | &nbsp; <b>Progress:</b> 6 months</p></div></article>
+      </div>
+    </section>
+
+    <section id="dit" class="section">
+      <div class="section-title"><span>💻</span><div><p>MY LEARNING STORY</p><h2>DIT Journey</h2></div></div>
+      <div class="glass progress-card">
+        <div class="progress-head"><div><h3>Diploma in Information Technology</h3><p>Government Skill Development Center, Hassa Balakot</p></div><strong>50%</strong></div>
+        <div class="progress"><div style="width:50%"></div></div>
+        <p class="progress-note">6 months completed out of 12 months</p>
+      </div>
+      <div class="journey-grid">
+        <div class="glass journey"><span>01–02</span><h3>🖥️ Computer Basics</h3><p>Computer fundamentals, Windows, file management, typing and office basics.</p></div>
+        <div class="glass journey"><span>03–04</span><h3>📊 Office & Data</h3><p>MS Word, Excel, PowerPoint, formulas and data-entry practice.</p></div>
+        <div class="glass journey"><span>05–06</span><h3>🌐 Creative & Web</h3><p>HTML/CSS, website work, Photoshop and Premiere Pro/video editing practice.</p></div>
+        <div class="glass journey future"><span>07–12</span><h3>🚀 Next Stage</h3><p>Advanced practical work, projects and remaining DIT learning. Update this area according to your actual syllabus.</p></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="section-title"><span>🛠️</span><div><p>WHAT I CAN DO</p><h2>My Skills</h2></div></div>
+      <div class="skill-grid">
+        <div class="skill glass"><div>📄</div><h3>MS Word</h3><p>Documents & formatting</p></div>
+        <div class="skill glass"><div>📊</div><h3>MS Excel</h3><p>Formulas & spreadsheets</p></div>
+        <div class="skill glass"><div>📽️</div><h3>PowerPoint</h3><p>Presentations</p></div>
+        <div class="skill glass"><div>⌨️</div><h3>Data Entry</h3><p>Accurate data work</p></div>
+        <div class="skill glass"><div>🌐</div><h3>HTML / CSS</h3><p>Web development</p></div>
+        <div class="skill glass"><div>🎨</div><h3>Photoshop</h3><p>Graphic editing</p></div>
+        <div class="skill glass"><div>🎬</div><h3>Premiere Pro</h3><p>Video editing</p></div>
+        <div class="skill glass"><div>🤖</div><h3>AI Tools</h3><p>AI & creative workflows</p></div>
+        <div class="skill glass"><div>💻</div><h3>C / C++</h3><p>Programming basics</p></div>
+        <div class="skill glass"><div>🔗</div><h3>Networking</h3><p>Computer networking basics</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-title"><span>🚀</span><div><p>MY WORK</p><h2>Projects</h2></div></div>
+      <div class="project-grid">
+        <article class="glass project"><div class="project-icon">🌐</div><h3>GSDC Hassa Balakot Website</h3><p>A responsive educational website project with modern sections and information.</p><span>HTML • CSS • JavaScript</span></article>
+        <article class="glass project"><div class="project-icon">🎬</div><h3>Video Editing Projects</h3><p>Creative edits and video projects created while learning Premiere Pro.</p><span>Premiere Pro</span></article>
+        <article class="glass project"><div class="project-icon">📊</div><h3>Office & Excel Practice</h3><p>Documents, spreadsheets, formulas and data-entry practice.</p><span>MS Office</span></article>
+      </div>
+    </section>
+
+    <section id="photos" class="section alt">
+      <div class="section-title"><span>📸</span><div><p>MY MEMORIES</p><h2>Photo Gallery</h2></div></div>
+      <div class="media-grid" id="photoGrid"></div>
+    </section>
+
+    <section id="videos" class="section">
+      <div class="section-title"><span>🎬</span><div><p>MY CREATIVE WORK</p><h2>Video Gallery</h2></div></div>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="section-title"><span>📞</span><div><p>LET'S CONNECT</p><h2>Contact</h2></div></div>
+      <div class="glass contact-card">
+        <h3>Thanks for visiting my portfolio! 🙌</h3>
+        <p>You can add your real email and social links here before publishing.</p>
+        <div class="contact-links">
+          <a href="mailto:your-email@example.com">📧 Email</a>
+          <a href="#" aria-label="Social profile">🌐 Social Media</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Mudassar's Portfolio • Built with HTML, CSS & JavaScript</footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

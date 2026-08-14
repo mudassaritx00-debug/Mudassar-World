@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudassar | Admin Access Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+  <div class="admin-wrap">
+    <div class="glass admin-card">
+      <p class="eyebrow">🔐 ADMIN PANEL</p>
+      <h1>Access Requests</h1>
+      <p>Only an account marked as admin in Supabase can manage requests.</p>
+      <button id="adminLogin" class="btn primary">Login / Refresh</button>
+      <button id="adminLogout" class="link-btn">Logout</button>
+      <p id="adminMsg" class="message"></p>
+      <div id="requests" class="requests"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
